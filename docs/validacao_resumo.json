@@ -1,0 +1,195 @@
+{
+  "date": "2026-10-15",
+  "reference_capture": "20261014_141328",
+  "render": {
+    "engine": "CYCLES",
+    "samples": 32,
+    "resolution": [
+      1280,
+      720
+    ],
+    "all_four_cameras_rendered": true
+  },
+  "scene": {
+    "architecture_meshes_preserved": true,
+    "architecture_transforms_preserved_except_documented_revisions": true,
+    "documented_architecture_revisions": [
+      "Pilar_J21"
+    ],
+    "calibration_files_unchanged": true,
+    "camera_pose_max_abs_error": {
+      "1": 1.0232492386741399e-07,
+      "2": 7.642137944685601e-08,
+      "3": 1.0391537674792062e-07,
+      "4": 8.70519369922107e-08
+    },
+    "blender_opencv_projection_max_error_px": {
+      "1": 0.00019117819514917424,
+      "2": 0.0001058944800645564,
+      "3": 0.00010879289742554444,
+      "4": 7.087974303863184e-05
+    },
+    "independent_chairs_tested": 13,
+    "root_ids_verified": 74,
+    "manual_floor_markers_preserved": 77,
+    "objects_total": 4016,
+    "meshes_total": 3893
+  },
+  "glb": {
+    "valid_glb2": true,
+    "bytes": 9650088,
+    "nodes": 3991,
+    "meshes": 3917,
+    "embedded_images": 1,
+    "independent_chair_roots": 13,
+    "chair_properties_and_axis_conversion_verified": true
+  },
+  "idempotence": {
+    "object_count_after_first_build": 4016,
+    "object_count_after_repeat_build": 4016,
+    "roots_after_first_build": 74,
+    "roots_after_repeat_build": 74,
+    "no_duplicate_objects": true,
+    "note": "Repetição completa do builder após novas medidas e impressora. A revisão final de três posições não cria/remove objetos."
+  },
+  "furniture_clearance": {
+    "method": "SAT world-XY; rectangles and 128-point round table; L enclosing rectangle",
+    "scope": "Desk/table tops, cabinet bodies, walls and pillars; not a full mesh collision check",
+    "pairs_checked": 216,
+    "overlaps": []
+  },
+  "user_edits": {
+    "objects_verified": 406,
+    "max_matrix_error": 0.0,
+    "chairs_and_markers_preserved": true
+  },
+  "landmark_errors": {
+    "fit_rmse_px": 2.8333826211709146,
+    "holdout_rmse_px": 4.2557330583108435
+  },
+  "baseline_cameras": {
+    "1": {
+      "roi_xywh": [
+        70,
+        118,
+        1109,
+        476
+      ],
+      "erro_medio_cor_0_255": 59.118,
+      "precisao_bordas_3px": 0.5317,
+      "revocacao_bordas_3px": 0.0211,
+      "f1_bordas_3px": 0.0405
+    },
+    "2": {
+      "roi_xywh": [
+        108,
+        128,
+        1108,
+        459
+      ],
+      "erro_medio_cor_0_255": 61.851,
+      "precisao_bordas_3px": 0.6328,
+      "revocacao_bordas_3px": 0.0384,
+      "f1_bordas_3px": 0.0723
+    },
+    "3": {
+      "roi_xywh": [
+        91,
+        128,
+        1114,
+        471
+      ],
+      "erro_medio_cor_0_255": 63.379,
+      "precisao_bordas_3px": 0.5625,
+      "revocacao_bordas_3px": 0.0563,
+      "f1_bordas_3px": 0.1023
+    },
+    "4": {
+      "roi_xywh": [
+        120,
+        156,
+        1068,
+        453
+      ],
+      "erro_medio_cor_0_255": 52.874,
+      "precisao_bordas_3px": 0.5487,
+      "revocacao_bordas_3px": 0.0467,
+      "f1_bordas_3px": 0.086
+    }
+  },
+  "final_cameras": {
+    "1": {
+      "roi_xywh": [
+        70,
+        118,
+        1109,
+        476
+      ],
+      "erro_medio_cor_0_255": 42.507,
+      "precisao_bordas_3px": 0.7326,
+      "revocacao_bordas_3px": 0.4703,
+      "f1_bordas_3px": 0.5728,
+      "real_fracao_pixels_canais_acima_250": 0.13496,
+      "sintetica_fracao_pixels_canais_acima_250": 0.0,
+      "piso_mediana_real_0_255": 145.0,
+      "piso_mediana_sintetica_0_255": 147.0
+    },
+    "2": {
+      "roi_xywh": [
+        108,
+        128,
+        1108,
+        459
+      ],
+      "erro_medio_cor_0_255": 35.694,
+      "precisao_bordas_3px": 0.7449,
+      "revocacao_bordas_3px": 0.4958,
+      "f1_bordas_3px": 0.5953,
+      "real_fracao_pixels_canais_acima_250": 0.13882,
+      "sintetica_fracao_pixels_canais_acima_250": 0.0,
+      "piso_mediana_real_0_255": 149.0,
+      "piso_mediana_sintetica_0_255": 150.0
+    },
+    "3": {
+      "roi_xywh": [
+        91,
+        128,
+        1114,
+        471
+      ],
+      "erro_medio_cor_0_255": 37.722,
+      "precisao_bordas_3px": 0.7463,
+      "revocacao_bordas_3px": 0.5524,
+      "f1_bordas_3px": 0.6348,
+      "real_fracao_pixels_canais_acima_250": 0.09339,
+      "sintetica_fracao_pixels_canais_acima_250": 0.0,
+      "piso_mediana_real_0_255": 136.0,
+      "piso_mediana_sintetica_0_255": 138.0
+    },
+    "4": {
+      "roi_xywh": [
+        120,
+        156,
+        1068,
+        453
+      ],
+      "erro_medio_cor_0_255": 48.279,
+      "precisao_bordas_3px": 0.7165,
+      "revocacao_bordas_3px": 0.5153,
+      "f1_bordas_3px": 0.5994,
+      "real_fracao_pixels_canais_acima_250": 0.05924,
+      "sintetica_fracao_pixels_canais_acima_250": 6e-05,
+      "piso_mediana_real_0_255": 136.0,
+      "piso_mediana_sintetica_0_255": 138.0
+    }
+  },
+  "limitations": [
+    "Pilar_J21: deslocamento provisório de +0,05 m em X baseado na folga de 8 cm estimada pelo usuário; conferir medida real e encontro com janela direita.",
+    "Largura original da sala 6,95 m difere da descrição de 6,67 m; piso e paredes não foram redimensionados.",
+    "Profundidades das mesas menores (0,50 m), mesas sob janelas (0,70 m) e forro (2,97 m) estimados.",
+    "Reprojeção multivista quantitativa cobre somente dois cantos da mesa L; não valida toda a sala.",
+    "Cadeiras e grade refletem edições do usuário; diferenças com a foto de 14/10 são esperadas.",
+    "Materiais, acessórios e processamento radiométrico das câmeras são aproximações.",
+    "F1 de bordas e MAE não medem percentual de fidelidade geométrica."
+  ]
+}

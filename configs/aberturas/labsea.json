@@ -1,0 +1,36 @@
+{
+  "unidade": "metros",
+  "observacao": "Esquadrias identificadas na planta: duas J21 na parede superior e uma P6 na parede inferior. Adota-se provisoriamente topo da planta=north (+Y) e base=south (-Y). Centros das aberturas ainda dependem da confirmacao do alinhamento da planta com os eixos da calibracao. J21: janela de correr em aluminio com vidro, 3,00x1,60 m, peitoril a 1,00 m. P6: porta de abrir em madeira com visor, duas folhas, 1,60x2,10 m. Quantidades do quadro sao do projeto completo, nao do LabSEA.",
+  "aberturas": [
+    {
+      "nome": "J21_01",
+      "codigo": "J21",
+      "tipo": "janela",
+      "parede": "north",
+      "centro_ao_longo": -1.79,
+      "largura": 3.0,
+      "base_z": 1.0,
+      "altura": 1.6
+    },
+    {
+      "nome": "J21_02",
+      "codigo": "J21",
+      "tipo": "janela",
+      "parede": "north",
+      "centro_ao_longo": 1.79,
+      "largura": 3.0,
+      "base_z": 1.0,
+      "altura": 1.6
+    },
+    {
+      "nome": "P6_entrada",
+      "codigo": "P6",
+      "tipo": "porta_dupla",
+      "parede": "south",
+      "centro_ao_longo": -2.225,
+      "largura": 1.6,
+      "base_z": 0.0,
+      "altura": 2.1
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+# Ambiente e cache Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Resultados locais e backups do Blender
+saida/
+mesas_marcadas.png
+*.blend1
+
+# Configurações locais e diretórios da ferramenta
+.env
+.env.*
+.aws/
+.codex/
+.agents/
+.DS_Store

@@ -1,0 +1,2656 @@
+{
+  "schema_version": 1,
+  "coordinate_system": "world_z_up",
+  "units": "m",
+  "rotation_units": "degrees_xyz",
+  "reference_capture": "saida/imagens_reais/20261014_141328",
+  "reference_time_utc": "2026-10-14T17:13:29Z",
+  "reference_frame_spread_s": 0.06756854,
+  "assumptions": [
+    "Altura dos tampos 0,75 m confirmada aproximadamente por triangulação da mesa L.",
+    "Módulos de bancadas e periféricos parcialmente ocultos: dimensões e divisão aproximadas.",
+    "Nenhuma bancada central antiga reconstruída; apenas marcas superficiais observadas no piso.",
+    "Origens de cadeiras no piso, eixos locais com frente +Y, raiz independente.",
+    "Divisões/cores não equivalem a identificação inequívoca de modelo comercial."
+  ],
+  "ceiling": {
+    "height_m": 2.97,
+    "confidence": "baixa",
+    "wall_height_preserved_m": 3.7,
+    "method": "hipótese acima das cotas ópticas calibradas de 2,84–2,89 m, informação do usuário sobre fixação no teto e carcaça nominal de 85,5 mm",
+    "measurement_required": true,
+    "notes": "Não é altura triangulada ou medida. Paredes permanecem com 3,70 m. Espaçadores locais acomodam a diferença entre poses e forro."
+  },
+  "objects": [
+    {
+      "id": "Desk_East_01",
+      "object_type": "desk",
+      "name": "Bancada lateral leste",
+      "position": [
+        3.02,
+        3.2,
+        0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        -90
+      ],
+      "dimensions": [
+        1.6,
+        0.76,
+        0.75
+      ],
+      "dynamic": false,
+      "trackable": false,
+      "confidence": "media",
+      "reference_cameras": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "position_method": "Redistribuição dos cinco módulos de 1,60 m, sem interseção, conferida nas quatro vistas; posição ainda estimada.",
+      "width_source": "Medida de 1,60 m informada pelo usuário em 15/10/2026",
+      "width_confidence": "alta"
+    },
+    {
+      "id": "Desk_East_02",
+      "object_type": "desk",
+      "name": "Bancada lateral leste",
+      "position": [
+        3.02,
+        1.6,
+        0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        -90
+      ],
+      "dimensions": [
+        1.6,
+        0.76,
+        0.75
+      ],
+      "dynamic": false,
+      "trackable": false,
+      "confidence": "media",
+      "reference_cameras": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "position_method": "Redistribuição dos cinco módulos de 1,60 m, sem interseção, conferida nas quatro vistas; posição ainda estimada.",
+      "width_source": "Medida de 1,60 m informada pelo usuário em 15/10/2026",
+      "width_confidence": "alta"
+    },
+    {
+      "id": "Desk_East_03",
+      "object_type": "desk",
+      "name": "Bancada lateral leste",
+      "position": [
+        3.02,
+        0.0,
+        0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        -90
+      ],
+      "dimensions": [
+        1.6,
+        0.76,
+        0.75
+      ],
+      "dynamic": false,
+      "trackable": false,
+      "confidence": "media",
+      "reference_cameras": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "position_method": "Redistribuição dos cinco módulos de 1,60 m, sem interseção, conferida nas quatro vistas; posição ainda estimada.",
+      "width_source": "Medida de 1,60 m informada pelo usuário em 15/10/2026",
+      "width_confidence": "alta"
+    },
+    {
+      "id": "Desk_East_04",
+      "object_type": "desk",
+      "name": "Bancada lateral leste",
+      "position": [
+        3.02,
+        -1.6,
+        0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        -90
+      ],
+      "dimensions": [
+        1.6,
+        0.76,
+        0.75
+      ],
+      "dynamic": false,
+      "trackable": false,
+      "confidence": "media",
+      "reference_cameras": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "position_method": "Redistribuição dos cinco módulos de 1,60 m, sem interseção, conferida nas quatro vistas; posição ainda estimada.",
+      "width_source": "Medida de 1,60 m informada pelo usuário em 15/10/2026",
+      "width_confidence": "alta"
+    },
+    {
+      "id": "Desk_East_05",
+      "object_type": "desk",
+      "name": "Bancada lateral leste",
+      "position": [
+        3.02,
+        -3.2,
+        0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        -90
+      ],
+      "dimensions": [
+        1.6,
+        0.76,
+        0.75
+      ],
+      "dynamic": false,
+      "trackable": false,
+      "confidence": "media",
+      "reference_cameras": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "position_method": "Redistribuição dos cinco módulos de 1,60 m, sem interseção, conferida nas quatro vistas; posição ainda estimada.",
+      "width_source": "Medida de 1,60 m informada pelo usuário em 15/10/2026",
+      "width_confidence": "alta"
+    },
+    {
+      "id": "Desk_West_01",
+      "object_type": "desk",
+      "name": "Bancada lateral oeste",
+      "position": [
+        -3.025,
+        1.255,
+        0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        90
+      ],
+      "dimensions": [
+        1.6,
+        0.76,
+        0.75
+      ],
+      "dynamic": false,
+      "trackable": false,
+      "confidence": "media",
+      "reference_cameras": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "position_method": "Dois módulos contíguos, com 2 cm de folga do Cabinet_002 e 5 mm antes das mesas norte. Posição estimada, sem alterar armário.",
+      "width_source": "Medida de 1,60 m informada pelo usuário em 15/10/2026",
+      "width_confidence": "alta"
+    },
+    {
+      "id": "Desk_West_02",
+      "object_type": "desk",
+      "name": "Bancada lateral oeste",
+      "position": [
+        -3.025,
+        2.855,
+        0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        90
+      ],
+      "dimensions": [
+        1.6,
+        0.76,
+        0.75
+      ],
+      "dynamic": false,
+      "trackable": false,
+      "confidence": "media",
+      "reference_cameras": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "position_method": "Dois módulos contíguos, com 2 cm de folga do Cabinet_002 e 5 mm antes das mesas norte. Posição estimada, sem alterar armário.",
+      "drawer_unit": true,
+      "width_source": "Medida de 1,60 m informada pelo usuário em 15/10/2026",
+      "width_confidence": "alta"
+    },
+    {
+      "id": "Desk_North_01",
+      "object_type": "desk",
+      "name": "Mesa central de 1,60 m sob janela esquerda",
+      "position": [
+        -1.82,
+        3.91,
+        0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": [
+        1.6,
+        0.7,
+        0.75
+      ],
+      "dynamic": false,
+      "trackable": false,
+      "confidence": "media",
+      "reference_cameras": [
+        3,
+        4
+      ],
+      "position_method": "Mesa central entre dois módulos menores; limites identificados na foto marcada, raios corrigidos pelo ROI no plano Z=0,75 m. Profundidade estimada.",
+      "width_source": "Medida de 1,60 m confirmada pelo usuário em 15/10/2026",
+      "width_confidence": "alta",
+      "notes": "Profundidade de 0,70 m estimada, maior que a dos módulos menores; largura confirmada."
+    },
+    {
+      "id": "Desk_North_03",
+      "object_type": "desk",
+      "name": "Mesa menor à esquerda da mesa central",
+      "position": [
+        -3.02,
+        3.91,
+        0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": [
+        0.8,
+        0.5,
+        0.75
+      ],
+      "dynamic": false,
+      "trackable": false,
+      "confidence": "media",
+      "reference_cameras": [
+        3,
+        4
+      ],
+      "position_method": "Alinhada com mesa central conforme usuário; largura 0,80 m confirmada, profundidade e posição aproximadas.",
+      "width_source": "Medida de 0,80 m confirmada pelo usuário em 15/10/2026",
+      "width_confidence": "alta",
+      "notes": "Profundidade de 0,50 m é hipótese; usuário confirma somente que é menor que a das mesas de 1,60 m. Frente recuada 10 cm em relação à central para encaixar na bancada perpendicular; orientação alinhada, posição aproximada."
+    },
+    {
+      "id": "Desk_North_04",
+      "object_type": "desk",
+      "name": "Mesa menor à direita da mesa central",
+      "position": [
+        -0.62,
+        3.91,
+        0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": [
+        0.8,
+        0.5,
+        0.75
+      ],
+      "dynamic": false,
+      "trackable": false,
+      "confidence": "media",
+      "reference_cameras": [
+        3,
+        4
+      ],
+      "position_method": "Alinhada com mesa central conforme usuário; largura 0,80 m confirmada, profundidade e posição aproximadas.",
+      "width_source": "Medida de 0,80 m confirmada pelo usuário em 15/10/2026",
+      "width_confidence": "alta",
+      "notes": "Profundidade de 0,50 m é hipótese; usuário confirma somente que é menor que a das mesas de 1,60 m. Frente estimada recuada 10 cm em relação à central, assim como a mesa menor esquerda, sem interseção com mesa de reunião."
+    },
+    {
+      "id": "Desk_North_02",
+      "object_type": "desk",
+      "name": "Bancada sob janela leste",
+      "position": [
+        1.52,
+        3.91,
+        0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": [
+        1.6,
+        0.7,
+        0.75
+      ],
+      "dynamic": false,
+      "trackable": false,
+      "confidence": "media",
+      "reference_cameras": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "position_method": "raios intersectados com plano de altura estimada; conferência conjunta das vistas",
+      "notes": "Profundidade de 0,70 m estimada, maior que a dos módulos menores; largura confirmada.",
+      "width_source": "Medida de 1,60 m confirmada pelo usuário em 15/10/2026",
+      "width_confidence": "alta"
+    },
+    {
+      "id": "Desk_L_001",
+      "object_type": "desk",
+      "name": "Mesa em L sob quadro branco",
+      "position": [
+        1.147,
+        -3.46,
+        0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": [
+        1.58,
+        1.42,
+        0.75
+      ],
+      "dynamic": false,
+      "trackable": false,
+      "confidence": "alta",
+      "reference_cameras": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "position_method": "raios intersectados com plano de altura estimada; conferência conjunta das vistas",
+      "shape": "L",
+      "landmarks": [
+        "L_NW",
+        "L_NE"
+      ],
+      "notes": "Dois cantos triangulados em três vistas. Recorte e pernas estimados; fundo parcialmente oculto."
+    },
+    {
+      "id": "Table_001",
+      "object_type": "table",
+      "name": "Mesa circular de reunião",
+      "position": [
+        -0.22,
+        3.04,
+        0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": [
+        1.2,
+        1.2,
+        0.75
+      ],
+      "dynamic": false,
+      "trackable": false,
+      "confidence": "media",
+      "reference_cameras": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "position_method": "raios intersectados com plano de altura estimada; conferência conjunta das vistas",
+      "notes": "Conjunto afastado 12 cm da janela para eliminar interseção com a mesa menor identificada; posição estimada dentro da incerteza visual. Cadeiras preservadas."
+    },
+    {
+      "id": "Chair_001",
+      "object_type": "chair",
+      "name": "Cadeira de escritório",
+      "position": [
+        2.4623000621795654,
+        3.2769999504089355,
+        0.0
+      ],
+      "rotation_deg": [
+        0.0,
+        0.0,
+        -83.00000117132056
+      ],
+      "dimensions": [
+        0.59,
+        0.6,
+        1.02
+      ],
+      "dynamic": true,
+      "trackable": true,
+      "confidence": "media",
+      "reference_cameras": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "position_method": "Interseção do centro aparente do assento com Z=0,46 m; origem trasladada para o piso. Assento parcialmente oculto pode introduzir erro.",
+      "variant": "office",
+      "arms": true,
+      "notes": "Estado de 2026-10-14 17:13:29 UTC. Identidade temporal entre capturas não inferida.",
+      "seat_observation": {
+        "camera": 2,
+        "roi_pixel": [
+          184,
+          248
+        ],
+        "plane_z_m": 0.46
+      },
+      "pose_source": "received_blend_2026-10-15"
+    },
+    {
+      "id": "Chair_002",
+      "object_type": "chair",
+      "name": "Cadeira de escritório",
+      "position": [
+        2.4368999004364014,
+        2.3989999294281006,
+        0.0
+      ],
+      "rotation_deg": [
+        0.0,
+        0.0,
+        -90.99999684048139
+      ],
+      "dimensions": [
+        0.59,
+        0.6,
+        1.02
+      ],
+      "dynamic": true,
+      "trackable": true,
+      "confidence": "media",
+      "reference_cameras": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "position_method": "Interseção do centro aparente do assento com Z=0,46 m; origem trasladada para o piso. Assento parcialmente oculto pode introduzir erro.",
+      "variant": "office",
+      "arms": false,
+      "notes": "Estado de 2026-10-14 17:13:29 UTC. Identidade temporal entre capturas não inferida.",
+      "seat_observation": {
+        "camera": 2,
+        "roi_pixel": [
+          288,
+          213
+        ],
+        "plane_z_m": 0.46
+      },
+      "pose_source": "received_blend_2026-10-15"
+    },
+    {
+      "id": "Chair_003",
+      "object_type": "chair",
+      "name": "Cadeira de escritório",
+      "position": [
+        2.4130001068115234,
+        0.3386000096797943,
+        0.0
+      ],
+      "rotation_deg": [
+        0.0,
+        0.0,
+        -95.00000150525098
+      ],
+      "dimensions": [
+        0.59,
+        0.6,
+        1.02
+      ],
+      "dynamic": true,
+      "trackable": true,
+      "confidence": "media",
+      "reference_cameras": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "position_method": "Interseção do centro aparente do assento com Z=0,46 m; origem trasladada para o piso. Assento parcialmente oculto pode introduzir erro.",
+      "variant": "office",
+      "arms": true,
+      "notes": "Estado de 2026-10-14 17:13:29 UTC. Identidade temporal entre capturas não inferida.",
+      "seat_observation": {
+        "camera": 2,
+        "roi_pixel": [
+          454,
+          156
+        ],
+        "plane_z_m": 0.46
+      },
+      "pose_source": "received_blend_2026-10-15"
+    },
+    {
+      "id": "Chair_004",
+      "object_type": "chair",
+      "name": "Cadeira de escritório",
+      "position": [
+        2.343400001525879,
+        -1.4673999547958374,
+        0.0
+      ],
+      "rotation_deg": [
+        0.0,
+        0.0,
+        -84.99999667351618
+      ],
+      "dimensions": [
+        0.59,
+        0.6,
+        1.02
+      ],
+      "dynamic": true,
+      "trackable": true,
+      "confidence": "media",
+      "reference_cameras": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "position_method": "Interseção do centro aparente do assento com Z=0,46 m; origem trasladada para o piso. Assento parcialmente oculto pode introduzir erro.",
+      "variant": "office",
+      "arms": false,
+      "notes": "Estado de 2026-10-14 17:13:29 UTC. Identidade temporal entre capturas não inferida.",
+      "seat_observation": {
+        "camera": 2,
+        "roi_pixel": [
+          551,
+          124
+        ],
+        "plane_z_m": 0.46
+      },
+      "pose_source": "received_blend_2026-10-15"
+    },
+    {
+      "id": "Chair_005",
+      "object_type": "chair",
+      "name": "Cadeira de escritório",
+      "position": [
+        2.3475000858306885,
+        -2.618299961090088,
+        0.0
+      ],
+      "rotation_deg": [
+        0.0,
+        0.0,
+        -86.99999900590097
+      ],
+      "dimensions": [
+        0.59,
+        0.6,
+        1.02
+      ],
+      "dynamic": true,
+      "trackable": true,
+      "confidence": "media",
+      "reference_cameras": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "position_method": "Interseção do centro aparente do assento com Z=0,46 m; origem trasladada para o piso. Assento parcialmente oculto pode introduzir erro.",
+      "variant": "office",
+      "arms": true,
+      "notes": "Estado de 2026-10-14 17:13:29 UTC. Identidade temporal entre capturas não inferida.",
+      "seat_observation": {
+        "camera": 2,
+        "roi_pixel": [
+          596,
+          108
+        ],
+        "plane_z_m": 0.46
+      },
+      "pose_source": "received_blend_2026-10-15"
+    },
+    {
+      "id": "Chair_006",
+      "object_type": "chair",
+      "name": "Cadeira de escritório",
+      "position": [
+        -1.863700032234192,
+        3.2167999744415283,
+        0.0
+      ],
+      "rotation_deg": [
+        0.0,
+        0.0,
+        -3.0000000834826057
+      ],
+      "dimensions": [
+        0.59,
+        0.6,
+        1.02
+      ],
+      "dynamic": true,
+      "trackable": true,
+      "confidence": "media",
+      "reference_cameras": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "position_method": "Interseção do centro aparente do assento com Z=0,46 m; origem trasladada para o piso. Assento parcialmente oculto pode introduzir erro.",
+      "variant": "office",
+      "arms": false,
+      "notes": "Estado de 2026-10-14 17:13:29 UTC. Identidade temporal entre capturas não inferida.",
+      "seat_observation": {
+        "camera": 3,
+        "roi_pixel": [
+          281,
+          152
+        ],
+        "plane_z_m": 0.46
+      },
+      "pose_source": "received_blend_2026-10-15"
+    },
+    {
+      "id": "Chair_007",
+      "object_type": "chair",
+      "name": "Cadeira de escritório",
+      "position": [
+        1.0099999904632568,
+        3.7200000286102295,
+        0.0
+      ],
+      "rotation_deg": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dimensions": [
+        0.59,
+        0.6,
+        1.02
+      ],
+      "dynamic": true,
+      "trackable": true,
+      "confidence": "media",
+      "reference_cameras": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "position_method": "Encosto visível na câmera 1 em ROI (771,449), plano Z≈0,80 m; origem corrigida pelo deslocamento local de 0,23 m do encosto.",
+      "variant": "office",
+      "arms": true,
+      "notes": "Cadeira parcialmente encaixada sob a bancada norte. Conferida nas vistas 1 e 3; posição transitória.",
+      "pose_source": "received_blend_2026-10-15"
+    },
+    {
+      "id": "Chair_008",
+      "object_type": "chair",
+      "name": "Cadeira de escritório",
+      "position": [
+        1.6727268695831299,
+        3.2423999309539795,
+        0.0
+      ],
+      "rotation_deg": [
+        0.0,
+        0.0,
+        -18.000000500895634
+      ],
+      "dimensions": [
+        0.59,
+        0.6,
+        1.02
+      ],
+      "dynamic": true,
+      "trackable": true,
+      "confidence": "media",
+      "reference_cameras": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "position_method": "Interseção do centro aparente do assento com Z=0,46 m; origem trasladada para o piso. Assento parcialmente oculto pode introduzir erro.",
+      "variant": "office",
+      "arms": true,
+      "notes": "Estado de 2026-10-14 17:13:29 UTC. Identidade temporal entre capturas não inferida.",
+      "seat_observation": {
+        "camera": 3,
+        "roi_pixel": [
+          516,
+          106
+        ],
+        "plane_z_m": 0.46
+      },
+      "pose_source": "received_blend_2026-10-15",
+      "pose_revision_note": "Pose do arquivo Blender recebido em 15/10 preservada. Observações de assento registram a estimativa anterior, não uma validação desta edição."
+    },
+    {
+      "id": "Chair_009",
+      "object_type": "chair",
+      "name": "Cadeira de escritório",
+      "position": [
+        -2.461199998855591,
+        0.914900004863739,
+        0.0
+      ],
+      "rotation_deg": [
+        0.0,
+        0.0,
+        83.00000117132056
+      ],
+      "dimensions": [
+        0.59,
+        0.6,
+        1.02
+      ],
+      "dynamic": true,
+      "trackable": true,
+      "confidence": "media",
+      "reference_cameras": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "position_method": "Interseção do centro aparente do assento com Z=0,46 m; origem trasladada para o piso. Assento parcialmente oculto pode introduzir erro.",
+      "variant": "office",
+      "arms": false,
+      "notes": "Estado de 2026-10-14 17:13:29 UTC. Identidade temporal entre capturas não inferida.",
+      "seat_observation": {
+        "camera": 1,
+        "roi_pixel": [
+          712,
+          153
+        ],
+        "plane_z_m": 0.46
+      },
+      "pose_source": "received_blend_2026-10-15"
+    },
+    {
+      "id": "Chair_010",
+      "object_type": "chair",
+      "name": "Cadeira de escritório",
+      "position": [
+        -2.442199945449829,
+        2.4800000190734863,
+        0.0
+      ],
+      "rotation_deg": [
+        0.0,
+        0.0,
+        96.99999700744661
+      ],
+      "dimensions": [
+        0.59,
+        0.6,
+        1.02
+      ],
+      "dynamic": true,
+      "trackable": true,
+      "confidence": "media",
+      "reference_cameras": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "position_method": "Interseção do centro aparente do assento com Z=0,46 m; origem trasladada para o piso. Assento parcialmente oculto pode introduzir erro.",
+      "variant": "office",
+      "arms": true,
+      "notes": "Estado de 2026-10-14 17:13:29 UTC. Identidade temporal entre capturas não inferida.",
+      "seat_observation": {
+        "camera": 1,
+        "roi_pixel": [
+          839,
+          207
+        ],
+        "plane_z_m": 0.46
+      },
+      "pose_source": "received_blend_2026-10-15"
+    },
+    {
+      "id": "Chair_011",
+      "object_type": "chair",
+      "name": "Cadeira de escritório",
+      "position": [
+        -0.7526999711990356,
+        2.545599937438965,
+        0.0
+      ],
+      "rotation_deg": [
+        0.0,
+        0.0,
+        -33.99999866940647
+      ],
+      "dimensions": [
+        0.59,
+        0.6,
+        1.02
+      ],
+      "dynamic": true,
+      "trackable": true,
+      "confidence": "media",
+      "reference_cameras": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "position_method": "Interseção do centro aparente do assento com Z=0,46 m; origem trasladada para o piso. Assento parcialmente oculto pode introduzir erro.",
+      "variant": "office",
+      "arms": true,
+      "notes": "Estado de 2026-10-14 17:13:29 UTC. Identidade temporal entre capturas não inferida.",
+      "seat_observation": {
+        "camera": 1,
+        "roi_pixel": [
+          760,
+          269
+        ],
+        "plane_z_m": 0.46
+      },
+      "pose_source": "received_blend_2026-10-15"
+    },
+    {
+      "id": "Chair_012",
+      "object_type": "chair",
+      "name": "Cadeira de escritório",
+      "position": [
+        0.4889608919620514,
+        2.826878070831299,
+        0.0
+      ],
+      "rotation_deg": [
+        0.0,
+        0.0,
+        79.99999767274336
+      ],
+      "dimensions": [
+        0.59,
+        0.6,
+        1.02
+      ],
+      "dynamic": true,
+      "trackable": true,
+      "confidence": "media",
+      "reference_cameras": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "position_method": "Interseção do centro aparente do assento com Z=0,46 m; origem trasladada para o piso. Assento parcialmente oculto pode introduzir erro.",
+      "variant": "office",
+      "arms": true,
+      "notes": "Estado de 2026-10-14 17:13:29 UTC. Identidade temporal entre capturas não inferida.",
+      "seat_observation": {
+        "camera": 1,
+        "roi_pixel": [
+          752,
+          354
+        ],
+        "plane_z_m": 0.46
+      },
+      "pose_source": "received_blend_2026-10-15",
+      "pose_revision_note": "Pose do arquivo Blender recebido em 15/10 preservada. Observações de assento registram a estimativa anterior, não uma validação desta edição."
+    },
+    {
+      "id": "Chair_013",
+      "object_type": "chair",
+      "name": "Cadeira verde de visitante",
+      "position": [
+        -0.9965999722480774,
+        3.4394149780273438,
+        0.0
+      ],
+      "rotation_deg": [
+        0.0,
+        -0.0,
+        -6.123854548505991
+      ],
+      "dimensions": [
+        0.48,
+        0.5,
+        0.91
+      ],
+      "dynamic": true,
+      "trackable": true,
+      "confidence": "media",
+      "reference_cameras": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "position_method": "Interseção do centro aparente do assento com Z=0,46 m; origem trasladada para o piso. Assento parcialmente oculto pode introduzir erro.",
+      "variant": "visitor",
+      "arms": true,
+      "notes": "Estado de 2026-10-14 17:13:29 UTC. Identidade temporal entre capturas não inferida.",
+      "seat_observation": {
+        "camera": 1,
+        "roi_pixel": [
+          905,
+          328
+        ],
+        "plane_z_m": 0.46
+      },
+      "pose_source": "received_blend_2026-10-15",
+      "pose_revision_note": "Pose do arquivo Blender recebido em 15/10 preservada. Observações de assento registram a estimativa anterior, não uma validação desta edição."
+    },
+    {
+      "id": "Cabinet_001",
+      "object_type": "cabinet",
+      "name": "Armário alto de duas portas",
+      "position": [
+        -3.18,
+        -2.06,
+        0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        90
+      ],
+      "dimensions": [
+        0.9,
+        0.48,
+        2.05
+      ],
+      "dynamic": false,
+      "trackable": false,
+      "confidence": "media",
+      "reference_cameras": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "position_method": "raios intersectados com plano de altura estimada; conferência conjunta das vistas",
+      "notes": "Três volumes distintos confirmados nas vistas; altura e espessura estimadas."
+    },
+    {
+      "id": "Cabinet_002",
+      "object_type": "cabinet",
+      "name": "Armário alto de duas portas",
+      "position": [
+        -3.18,
+        -0.015,
+        0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        90
+      ],
+      "dimensions": [
+        0.9,
+        0.48,
+        2.05
+      ],
+      "dynamic": false,
+      "trackable": false,
+      "confidence": "media",
+      "reference_cameras": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "position_method": "raios intersectados com plano de altura estimada; conferência conjunta das vistas",
+      "notes": "Três volumes distintos confirmados nas vistas; altura e espessura estimadas."
+    },
+    {
+      "id": "Cabinet_003",
+      "object_type": "cabinet",
+      "name": "Armário alto de duas portas",
+      "position": [
+        -0.87,
+        -4.04,
+        0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        180
+      ],
+      "dimensions": [
+        0.9,
+        0.48,
+        2.05
+      ],
+      "dynamic": false,
+      "trackable": false,
+      "confidence": "media",
+      "reference_cameras": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "position_method": "raios intersectados com plano de altura estimada; conferência conjunta das vistas",
+      "notes": "Três volumes distintos confirmados nas vistas; altura e espessura estimadas."
+    },
+    {
+      "id": "Monitor_001",
+      "object_type": "monitor",
+      "name": "Monitor de estação",
+      "position": [
+        3.15,
+        2.96,
+        0.75
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        -90
+      ],
+      "dimensions": [
+        0.46,
+        0.19,
+        0.38
+      ],
+      "dynamic": false,
+      "trackable": false,
+      "confidence": "media",
+      "reference_cameras": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "position_method": "raios intersectados com plano de altura estimada; conferência conjunta das vistas",
+      "on": false
+    },
+    {
+      "id": "Monitor_002",
+      "object_type": "monitor",
+      "name": "Monitor de estação",
+      "position": [
+        3.15,
+        2.49,
+        0.75
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        -90
+      ],
+      "dimensions": [
+        0.46,
+        0.19,
+        0.38
+      ],
+      "dynamic": false,
+      "trackable": false,
+      "confidence": "media",
+      "reference_cameras": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "position_method": "raios intersectados com plano de altura estimada; conferência conjunta das vistas",
+      "on": false
+    },
+    {
+      "id": "Monitor_003",
+      "object_type": "monitor",
+      "name": "Monitor de estação",
+      "position": [
+        3.15,
+        1.3,
+        0.75
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        -90
+      ],
+      "dimensions": [
+        0.46,
+        0.19,
+        0.38
+      ],
+      "dynamic": false,
+      "trackable": false,
+      "confidence": "media",
+      "reference_cameras": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "position_method": "raios intersectados com plano de altura estimada; conferência conjunta das vistas",
+      "on": true
+    },
+    {
+      "id": "Monitor_004",
+      "object_type": "monitor",
+      "name": "Monitor de estação",
+      "position": [
+        3.15,
+        -0.1,
+        0.75
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        -90
+      ],
+      "dimensions": [
+        0.46,
+        0.19,
+        0.38
+      ],
+      "dynamic": false,
+      "trackable": false,
+      "confidence": "media",
+      "reference_cameras": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "position_method": "raios intersectados com plano de altura estimada; conferência conjunta das vistas",
+      "on": false
+    },
+    {
+      "id": "Monitor_005",
+      "object_type": "monitor",
+      "name": "Monitor de estação",
+      "position": [
+        3.15,
+        -0.61,
+        0.75
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        -90
+      ],
+      "dimensions": [
+        0.46,
+        0.19,
+        0.38
+      ],
+      "dynamic": false,
+      "trackable": false,
+      "confidence": "media",
+      "reference_cameras": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "position_method": "raios intersectados com plano de altura estimada; conferência conjunta das vistas",
+      "on": false
+    },
+    {
+      "id": "Monitor_006",
+      "object_type": "monitor",
+      "name": "Monitor de estação",
+      "position": [
+        3.15,
+        -1.68,
+        0.75
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        -90
+      ],
+      "dimensions": [
+        0.46,
+        0.19,
+        0.38
+      ],
+      "dynamic": false,
+      "trackable": false,
+      "confidence": "media",
+      "reference_cameras": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "position_method": "raios intersectados com plano de altura estimada; conferência conjunta das vistas",
+      "on": false,
+      "notes": "Pequeno afastamento para acomodar a impressora identificada sem interseção com tela, teclado ou mouse; pose estimada."
+    },
+    {
+      "id": "Monitor_007",
+      "object_type": "monitor",
+      "name": "Monitor de estação",
+      "position": [
+        3.15,
+        -3.45,
+        0.75
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        -90
+      ],
+      "dimensions": [
+        0.46,
+        0.19,
+        0.38
+      ],
+      "dynamic": false,
+      "trackable": false,
+      "confidence": "media",
+      "reference_cameras": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "position_method": "raios intersectados com plano de altura estimada; conferência conjunta das vistas",
+      "on": false
+    },
+    {
+      "id": "Monitor_008",
+      "object_type": "monitor",
+      "name": "Monitor de estação",
+      "position": [
+        -3.18,
+        0.7,
+        0.75
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        90
+      ],
+      "dimensions": [
+        0.46,
+        0.19,
+        0.38
+      ],
+      "dynamic": false,
+      "trackable": false,
+      "confidence": "media",
+      "reference_cameras": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "position_method": "raios intersectados com plano de altura estimada; conferência conjunta das vistas",
+      "on": false,
+      "notes": "Deslocado 6 cm ao longo da bancada para não atravessar a lateral do armário após correção do módulo."
+    },
+    {
+      "id": "Monitor_009",
+      "object_type": "monitor",
+      "name": "Monitor de estação",
+      "position": [
+        -3.18,
+        1.12,
+        0.75
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        90
+      ],
+      "dimensions": [
+        0.46,
+        0.19,
+        0.38
+      ],
+      "dynamic": false,
+      "trackable": false,
+      "confidence": "media",
+      "reference_cameras": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "position_method": "raios intersectados com plano de altura estimada; conferência conjunta das vistas",
+      "on": false
+    },
+    {
+      "id": "Monitor_010",
+      "object_type": "monitor",
+      "name": "Monitor de estação",
+      "position": [
+        -3.18,
+        2.2,
+        0.75
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        90
+      ],
+      "dimensions": [
+        0.46,
+        0.19,
+        0.38
+      ],
+      "dynamic": false,
+      "trackable": false,
+      "confidence": "media",
+      "reference_cameras": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "position_method": "raios intersectados com plano de altura estimada; conferência conjunta das vistas",
+      "on": false
+    },
+    {
+      "id": "Monitor_011",
+      "object_type": "monitor",
+      "name": "Monitor de estação",
+      "position": [
+        -3.18,
+        2.68,
+        0.75
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        90
+      ],
+      "dimensions": [
+        0.46,
+        0.19,
+        0.38
+      ],
+      "dynamic": false,
+      "trackable": false,
+      "confidence": "media",
+      "reference_cameras": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "position_method": "raios intersectados com plano de altura estimada; conferência conjunta das vistas",
+      "on": false
+    },
+    {
+      "id": "Monitor_012",
+      "object_type": "monitor",
+      "name": "Monitor de estação",
+      "position": [
+        -1.82,
+        4.02,
+        0.75
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": [
+        0.46,
+        0.19,
+        0.38
+      ],
+      "dynamic": false,
+      "trackable": false,
+      "confidence": "media",
+      "reference_cameras": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "position_method": "raios intersectados com plano de altura estimada; conferência conjunta das vistas",
+      "on": false
+    },
+    {
+      "id": "Monitor_013",
+      "object_type": "monitor",
+      "name": "Monitor de estação",
+      "position": [
+        1.98,
+        4.02,
+        0.75
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": [
+        0.46,
+        0.19,
+        0.38
+      ],
+      "dynamic": false,
+      "trackable": false,
+      "confidence": "media",
+      "reference_cameras": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "position_method": "raios intersectados com plano de altura estimada; conferência conjunta das vistas",
+      "on": false
+    },
+    {
+      "id": "Display_Wall_001",
+      "object_type": "monitor",
+      "name": "Televisor da parede leste",
+      "position": [
+        3.39,
+        -3.15,
+        1.31
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        -90
+      ],
+      "dimensions": [
+        1.24,
+        0.06,
+        0.69
+      ],
+      "dynamic": false,
+      "trackable": false,
+      "confidence": "media",
+      "reference_cameras": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "position_method": "raios intersectados com plano de altura estimada; conferência conjunta das vistas",
+      "wall_mount": true
+    },
+    {
+      "id": "Keyboard_001",
+      "object_type": "keyboard",
+      "name": "Teclado e mouse",
+      "position": [
+        2.83,
+        2.73,
+        0.75
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        -90
+      ],
+      "dimensions": [
+        0.42,
+        0.15,
+        0.022
+      ],
+      "dynamic": false,
+      "trackable": false,
+      "confidence": "media",
+      "reference_cameras": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "position_method": "raios intersectados com plano de altura estimada; conferência conjunta das vistas"
+    },
+    {
+      "id": "Keyboard_002",
+      "object_type": "keyboard",
+      "name": "Teclado e mouse",
+      "position": [
+        2.83,
+        1.25,
+        0.75
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        -90
+      ],
+      "dimensions": [
+        0.42,
+        0.15,
+        0.022
+      ],
+      "dynamic": false,
+      "trackable": false,
+      "confidence": "media",
+      "reference_cameras": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "position_method": "raios intersectados com plano de altura estimada; conferência conjunta das vistas"
+    },
+    {
+      "id": "Keyboard_003",
+      "object_type": "keyboard",
+      "name": "Teclado e mouse",
+      "position": [
+        2.83,
+        -0.32,
+        0.75
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        -90
+      ],
+      "dimensions": [
+        0.42,
+        0.15,
+        0.022
+      ],
+      "dynamic": false,
+      "trackable": false,
+      "confidence": "media",
+      "reference_cameras": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "position_method": "raios intersectados com plano de altura estimada; conferência conjunta das vistas"
+    },
+    {
+      "id": "Keyboard_004",
+      "object_type": "keyboard",
+      "name": "Teclado e mouse",
+      "position": [
+        2.79,
+        -1.68,
+        0.75
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        -90
+      ],
+      "dimensions": [
+        0.42,
+        0.15,
+        0.022
+      ],
+      "dynamic": false,
+      "trackable": false,
+      "confidence": "media",
+      "reference_cameras": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "position_method": "raios intersectados com plano de altura estimada; conferência conjunta das vistas",
+      "notes": "Pequeno afastamento para acomodar a impressora identificada sem interseção com tela, teclado ou mouse; pose estimada."
+    },
+    {
+      "id": "Keyboard_005",
+      "object_type": "keyboard",
+      "name": "Teclado e mouse",
+      "position": [
+        2.83,
+        -3.4,
+        0.75
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        -90
+      ],
+      "dimensions": [
+        0.42,
+        0.15,
+        0.022
+      ],
+      "dynamic": false,
+      "trackable": false,
+      "confidence": "media",
+      "reference_cameras": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "position_method": "raios intersectados com plano de altura estimada; conferência conjunta das vistas"
+    },
+    {
+      "id": "Keyboard_006",
+      "object_type": "keyboard",
+      "name": "Teclado e mouse",
+      "position": [
+        -2.84,
+        0.86,
+        0.75
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        90
+      ],
+      "dimensions": [
+        0.42,
+        0.15,
+        0.022
+      ],
+      "dynamic": false,
+      "trackable": false,
+      "confidence": "media",
+      "reference_cameras": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "position_method": "raios intersectados com plano de altura estimada; conferência conjunta das vistas"
+    },
+    {
+      "id": "Keyboard_007",
+      "object_type": "keyboard",
+      "name": "Teclado e mouse",
+      "position": [
+        -2.84,
+        2.45,
+        0.75
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        90
+      ],
+      "dimensions": [
+        0.42,
+        0.15,
+        0.022
+      ],
+      "dynamic": false,
+      "trackable": false,
+      "confidence": "media",
+      "reference_cameras": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "position_method": "raios intersectados com plano de altura estimada; conferência conjunta das vistas"
+    },
+    {
+      "id": "Keyboard_008",
+      "object_type": "keyboard",
+      "name": "Teclado e mouse",
+      "position": [
+        -1.79,
+        3.71,
+        0.75
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": [
+        0.42,
+        0.15,
+        0.022
+      ],
+      "dynamic": false,
+      "trackable": false,
+      "confidence": "media",
+      "reference_cameras": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "position_method": "raios intersectados com plano de altura estimada; conferência conjunta das vistas"
+    },
+    {
+      "id": "Keyboard_009",
+      "object_type": "keyboard",
+      "name": "Teclado e mouse",
+      "position": [
+        1.95,
+        3.71,
+        0.75
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": [
+        0.42,
+        0.15,
+        0.022
+      ],
+      "dynamic": false,
+      "trackable": false,
+      "confidence": "media",
+      "reference_cameras": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "position_method": "raios intersectados com plano de altura estimada; conferência conjunta das vistas"
+    },
+    {
+      "id": "Printer3D_002",
+      "object_type": "printer_3d",
+      "name": "Impressora 3D GTMax Core A2V2",
+      "position": [
+        3.1,
+        -2.14,
+        0.75
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        -90
+      ],
+      "dimensions": [
+        0.425,
+        0.47,
+        0.512
+      ],
+      "dynamic": false,
+      "trackable": false,
+      "confidence": "media",
+      "reference_cameras": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "position_method": "Reprojeção do envelope nominal nas vistas 3 e 4, conferindo quatro cantos da tampa no plano Z=1,262 m; pose anterior do gabinete descartada.",
+      "variant": "gtmax_core_a2v2",
+      "legacy_id": "Computer_001",
+      "identity_confidence": "alta",
+      "dimensions_source": "Proposta do fabricante GTMax3D reproduzida no relatório institucional IFC OS 005/2020",
+      "source_url": "https://acessoainformacao.ifc.edu.br/wp-content/uploads/sites/26/2022/10/Relatorio-Consolidado-OS-005_2020_revisado_Unai-IFC.odt_RGR.pdf",
+      "notes": "Identificação corrigida pelo usuário. Envelope nominal 425×470×512 mm; porta, tampa, estrutura, LCD e mecanismo interno simplificados. Posição e detalhes internos aproximados. Pose corrigida de (3,12; -2,73) para (3,10; -2,14) m após comparação da tampa nas vistas 3 e 4."
+    },
+    {
+      "id": "Computer_002",
+      "object_type": "computer",
+      "name": "Gabinete/equipamento no canto noroeste",
+      "position": [
+        -2.96,
+        3.98,
+        0.75
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": [
+        0.22,
+        0.36,
+        0.43
+      ],
+      "dynamic": false,
+      "trackable": false,
+      "confidence": "baixa",
+      "reference_cameras": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "position_method": "raios intersectados com plano de altura estimada; conferência conjunta das vistas",
+      "notes": "Volume escuro à esquerda da impressora na foto marcada; separado da impressora e apoiado no módulo menor. Identificação do equipamento incerta."
+    },
+    {
+      "id": "Whiteboard_001",
+      "object_type": "whiteboard",
+      "name": "Quadro branco sob J16",
+      "position": [
+        1.73,
+        -4.235,
+        1.65
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        180
+      ],
+      "dimensions": [
+        2.9,
+        0.04,
+        1.08
+      ],
+      "dynamic": false,
+      "trackable": false,
+      "confidence": "media",
+      "reference_cameras": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "position_method": "raios intersectados com plano de altura estimada; conferência conjunta das vistas"
+    },
+    {
+      "id": "Noticeboard_001",
+      "object_type": "noticeboard",
+      "name": "Quadro de avisos da parede leste",
+      "position": [
+        3.405,
+        1.64,
+        1.5
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        -90
+      ],
+      "dimensions": [
+        2.02,
+        0.04,
+        1.12
+      ],
+      "dynamic": false,
+      "trackable": false,
+      "confidence": "media",
+      "reference_cameras": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "position_method": "raios intersectados com plano de altura estimada; conferência conjunta das vistas"
+    },
+    {
+      "id": "Ladder_001",
+      "object_type": "accessory",
+      "name": "Escada apoiada na parede oeste",
+      "position": [
+        -3.08,
+        -3.13,
+        0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        90
+      ],
+      "dimensions": [
+        0.45,
+        0.3,
+        1.62
+      ],
+      "dynamic": false,
+      "trackable": false,
+      "confidence": "media",
+      "reference_cameras": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "position_method": "raios intersectados com plano de altura estimada; conferência conjunta das vistas",
+      "variant": "ladder"
+    },
+    {
+      "id": "FoldedBoard_001",
+      "object_type": "accessory",
+      "name": "Painel dobrado entre armários",
+      "position": [
+        -3.08,
+        -1.07,
+        0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        90
+      ],
+      "dimensions": [
+        0.91,
+        0.15,
+        0.85
+      ],
+      "dynamic": false,
+      "trackable": false,
+      "confidence": "media",
+      "reference_cameras": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "position_method": "raios intersectados com plano de altura estimada; conferência conjunta das vistas",
+      "variant": "folded_board"
+    },
+    {
+      "id": "Bin_001",
+      "object_type": "accessory",
+      "name": "Lixeira junto ao painel",
+      "position": [
+        -2.96,
+        -0.53,
+        0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": [
+        0.24,
+        0.24,
+        0.28
+      ],
+      "dynamic": false,
+      "trackable": false,
+      "confidence": "media",
+      "reference_cameras": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "position_method": "raios intersectados com plano de altura estimada; conferência conjunta das vistas",
+      "variant": "bin"
+    },
+    {
+      "id": "Printer3D_001",
+      "object_type": "printer_3d",
+      "name": "Impressora 3D na bancada norte",
+      "position": [
+        -2.53,
+        3.92,
+        0.75
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": [
+        0.38,
+        0.4,
+        0.48
+      ],
+      "dynamic": false,
+      "trackable": false,
+      "confidence": "media",
+      "reference_cameras": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "position_method": "raios intersectados com plano de altura estimada; conferência conjunta das vistas",
+      "variant": "printer3d"
+    },
+    {
+      "id": "Projector_001",
+      "object_type": "accessory",
+      "name": "Projetor suspenso",
+      "position": [
+        -0.11,
+        -1.17,
+        2.28
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        180
+      ],
+      "dimensions": [
+        0.29,
+        0.24,
+        0.1
+      ],
+      "dynamic": false,
+      "trackable": false,
+      "confidence": "media",
+      "reference_cameras": [
+        2,
+        3,
+        4
+      ],
+      "position_method": "triangulação aproximada dos centros aparentes nas imagens 3 e 4",
+      "variant": "projector",
+      "mount_length": 0.69,
+      "notes": "Um único projetor. Correspondência entre vistas 3 e 4 triangulada; conferida também na vista 2. Centro do invólucro aproximado, não um ponto material exato.",
+      "observations": {
+        "3": [
+          621,
+          43
+        ],
+        "4": [
+          484,
+          10
+        ]
+      }
+    },
+    {
+      "id": "Shelf_001",
+      "object_type": "accessory",
+      "name": "Nicho pequeno na parede",
+      "position": [
+        3.34,
+        -0.16,
+        1.86
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        -90
+      ],
+      "dimensions": [
+        0.22,
+        0.18,
+        0.25
+      ],
+      "dynamic": false,
+      "trackable": false,
+      "confidence": "media",
+      "reference_cameras": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "position_method": "raios intersectados com plano de altura estimada; conferência conjunta das vistas",
+      "variant": "shelf"
+    },
+    {
+      "id": "Shelf_002",
+      "object_type": "accessory",
+      "name": "Nicho pequeno na parede",
+      "position": [
+        3.34,
+        -0.52,
+        2.08
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        -90
+      ],
+      "dimensions": [
+        0.22,
+        0.18,
+        0.25
+      ],
+      "dynamic": false,
+      "trackable": false,
+      "confidence": "media",
+      "reference_cameras": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "position_method": "raios intersectados com plano de altura estimada; conferência conjunta das vistas",
+      "variant": "shelf"
+    },
+    {
+      "id": "Shelf_003",
+      "object_type": "accessory",
+      "name": "Nicho pequeno na parede",
+      "position": [
+        3.34,
+        -0.87,
+        1.89
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        -90
+      ],
+      "dimensions": [
+        0.22,
+        0.18,
+        0.25
+      ],
+      "dynamic": false,
+      "trackable": false,
+      "confidence": "media",
+      "reference_cameras": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "position_method": "raios intersectados com plano de altura estimada; conferência conjunta das vistas",
+      "variant": "shelf"
+    },
+    {
+      "id": "Shelf_004",
+      "object_type": "accessory",
+      "name": "Nicho pequeno na parede",
+      "position": [
+        3.34,
+        -1.22,
+        2.08
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        -90
+      ],
+      "dimensions": [
+        0.22,
+        0.18,
+        0.25
+      ],
+      "dynamic": false,
+      "trackable": false,
+      "confidence": "media",
+      "reference_cameras": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "position_method": "raios intersectados com plano de altura estimada; conferência conjunta das vistas",
+      "variant": "shelf"
+    },
+    {
+      "id": "Cup_001",
+      "object_type": "accessory",
+      "name": "Copo sobre mesa de reunião",
+      "position": [
+        -0.22,
+        3.04,
+        0.75
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": [
+        0.075,
+        0.075,
+        0.115
+      ],
+      "dynamic": false,
+      "trackable": false,
+      "confidence": "media",
+      "reference_cameras": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "position_method": "raios intersectados com plano de altura estimada; conferência conjunta das vistas",
+      "variant": "cup",
+      "notes": "Conjunto afastado 12 cm da janela para eliminar interseção com a mesa menor identificada; posição estimada dentro da incerteza visual. Cadeiras preservadas."
+    },
+    {
+      "id": "Ball_001",
+      "object_type": "accessory",
+      "name": "Objeto esférico laranja na bancada",
+      "position": [
+        2.99,
+        -0.27,
+        0.75
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": [
+        0.16,
+        0.16,
+        0.16
+      ],
+      "dynamic": false,
+      "trackable": false,
+      "confidence": "media",
+      "reference_cameras": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "position_method": "raios intersectados com plano de altura estimada; conferência conjunta das vistas",
+      "variant": "ball"
+    },
+    {
+      "id": "Box_001",
+      "object_type": "accessory",
+      "name": "Caixa sob bancada leste",
+      "position": [
+        2.96,
+        0.4,
+        0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        -90
+      ],
+      "dimensions": [
+        0.48,
+        0.44,
+        0.37
+      ],
+      "dynamic": false,
+      "trackable": false,
+      "confidence": "media",
+      "reference_cameras": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "position_method": "raios intersectados com plano de altura estimada; conferência conjunta das vistas"
+    },
+    {
+      "id": "Box_002",
+      "object_type": "accessory",
+      "name": "Caixa junto à entrada",
+      "position": [
+        -1.32,
+        -4.02,
+        0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": [
+        0.27,
+        0.26,
+        0.3
+      ],
+      "dynamic": false,
+      "trackable": false,
+      "confidence": "media",
+      "reference_cameras": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "position_method": "raios intersectados com plano de altura estimada; conferência conjunta das vistas"
+    },
+    {
+      "id": "CameraModel_001",
+      "object_type": "camera_model",
+      "name": "Intelbras VIP 1230 D G2",
+      "position": [
+        2.7367904119058184,
+        3.698505154642157,
+        2.8676400253693695
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": [
+        0.109,
+        0.109,
+        0.0855
+      ],
+      "dynamic": false,
+      "trackable": false,
+      "confidence": "media",
+      "reference_cameras": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "position_method": "raios intersectados com plano de altura estimada; conferência conjunta das vistas",
+      "camera_id": 1,
+      "optical_camera": "Camera_1",
+      "notes": "Base horizontal para fixação no teto. Dimensões externas oficiais; posição interna da lente e espaçador estimados."
+    },
+    {
+      "id": "CameraModel_002",
+      "object_type": "camera_model",
+      "name": "Intelbras VIP 1230 D G2",
+      "position": [
+        -2.878441560275836,
+        3.732166696592153,
+        2.8502064515434498
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": [
+        0.109,
+        0.109,
+        0.0855
+      ],
+      "dynamic": false,
+      "trackable": false,
+      "confidence": "media",
+      "reference_cameras": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "position_method": "raios intersectados com plano de altura estimada; conferência conjunta das vistas",
+      "camera_id": 2,
+      "optical_camera": "Camera_2",
+      "notes": "Base horizontal para fixação no teto. Dimensões externas oficiais; posição interna da lente e espaçador estimados."
+    },
+    {
+      "id": "CameraModel_003",
+      "object_type": "camera_model",
+      "name": "Intelbras VIP 1230 D G2",
+      "position": [
+        -2.836203917468233,
+        -3.776547592147554,
+        2.885129591223526
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": [
+        0.109,
+        0.109,
+        0.0855
+      ],
+      "dynamic": false,
+      "trackable": false,
+      "confidence": "media",
+      "reference_cameras": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "position_method": "raios intersectados com plano de altura estimada; conferência conjunta das vistas",
+      "camera_id": 3,
+      "optical_camera": "Camera_3",
+      "notes": "Base horizontal para fixação no teto. Dimensões externas oficiais; posição interna da lente e espaçador estimados."
+    },
+    {
+      "id": "CameraModel_004",
+      "object_type": "camera_model",
+      "name": "Intelbras VIP 1230 D G2",
+      "position": [
+        2.8266853458844823,
+        -3.808249876401772,
+        2.842500517468665
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": [
+        0.109,
+        0.109,
+        0.0855
+      ],
+      "dynamic": false,
+      "trackable": false,
+      "confidence": "media",
+      "reference_cameras": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "position_method": "raios intersectados com plano de altura estimada; conferência conjunta das vistas",
+      "camera_id": 4,
+      "optical_camera": "Camera_4",
+      "notes": "Base horizontal para fixação no teto. Dimensões externas oficiais; posição interna da lente e espaçador estimados."
+    },
+    {
+      "id": "EquipmentCase_001",
+      "object_type": "accessory",
+      "name": "Maleta escura sobre armário",
+      "position": [
+        -3.18,
+        -2.06,
+        2.05
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        90
+      ],
+      "dimensions": [
+        0.76,
+        0.42,
+        0.33
+      ],
+      "dynamic": false,
+      "trackable": false,
+      "confidence": "media",
+      "reference_cameras": [
+        2,
+        3,
+        4
+      ],
+      "position_method": "Topo do armário, dimensão aparente nas vistas 3 e 4",
+      "variant": "equipment_case",
+      "notes": "Volume externo claramente visível. Conteúdo não inferido."
+    }
+  ],
+  "floor_markers_xy": [
+    [
+      2.8295,
+      1.7675
+    ],
+    [
+      2.1267,
+      1.6709
+    ],
+    [
+      1.4014,
+      1.5937
+    ],
+    [
+      0.7232,
+      1.4999
+    ],
+    [
+      -0.0579,
+      1.4074
+    ],
+    [
+      -0.7603,
+      1.3267
+    ],
+    [
+      -1.6492,
+      1.212
+    ],
+    [
+      -0.5735,
+      1.9484
+    ],
+    [
+      -1.2981,
+      1.8399
+    ],
+    [
+      -2.0449,
+      1.7688
+    ],
+    [
+      -2.0339,
+      2.1049
+    ],
+    [
+      -1.1361,
+      2.3255
+    ],
+    [
+      -0.5206,
+      2.4502
+    ],
+    [
+      -1.51,
+      2.4904
+    ]
+  ],
+  "floor_marker_observations": {
+    "camera": 2,
+    "roi_pixels": [
+      [
+        343,
+        216
+      ],
+      [
+        381,
+        230
+      ],
+      [
+        423,
+        247
+      ],
+      [
+        469,
+        264
+      ],
+      [
+        528,
+        287
+      ],
+      [
+        589,
+        311
+      ],
+      [
+        681,
+        346
+      ],
+      [
+        524,
+        341
+      ],
+      [
+        600,
+        373
+      ],
+      [
+        690,
+        416
+      ],
+      [
+        663,
+        450
+      ],
+      [
+        540,
+        404
+      ],
+      [
+        471,
+        375
+      ],
+      [
+        563,
+        449
+      ]
+    ],
+    "plane_z_m": 0
+  },
+  "rendering": {
+    "engine": "CYCLES",
+    "samples": 32,
+    "exposure_base_ev": -0.5,
+    "camera_exposure_offsets_ev": {
+      "1": -0.1,
+      "2": -0.05,
+      "3": -0.45,
+      "4": -0.5
+    },
+    "floor_texture_srgb_factor": 0.82,
+    "photometry_confidence": "baixa",
+    "method": "Exposição aparente estimada nas regiões centrais do piso da mesma captura. Não altera a calibração geométrica; não equivale a calibração radiométrica ou metadados reais de exposição."
+  },
+  "floor_marker_source": "scene_data/floor_markers.json",
+  "furniture_revision": {
+    "date": "2026-10-15",
+    "reference": "mesas_marcadas.png",
+    "measured_width_m": 1.6,
+    "estimated_small_widths_m": [],
+    "estimated_north_depth_m": 0.7,
+    "chairs": "Posições e rotações editadas pelo usuário preservadas; nenhuma câmera rotacionada.",
+    "original_overlap_m": 0.26,
+    "confirmed_small_widths_m": [
+      0.8,
+      0.8
+    ],
+    "estimated_small_depth_m": 0.5
+  },
+  "architecture_adjustments": [
+    {
+      "object_id": "Pilar_J21",
+      "original_location": [
+        0,
+        4.074999809265137,
+        1.850000023841858
+      ],
+      "target_location": [
+        0.05,
+        4.074999809265137,
+        1.850000023841858
+      ],
+      "confidence": "baixa",
+      "reason": "Usuário esclareceu que pilar/posição vêm apenas da planta; estima folga de 8 cm entre fim da J21 esquerda e pilar, e confirma três mesas alinhadas somando 3,20 m. Deslocamento provisório de +5 cm em X produz folga 8 cm e vão livre 3,215 m. Dimensões 0,52 m preservadas. Medição pendente.",
+      "measurement_required": true,
+      "right_window_junction_note": "Pilar alcança X=0,31; abertura direita começa X=0,29. Encontro com moldura direita fica com 2 cm de sobreposição em projeção X; posições das janelas preservadas e junção ainda requer levantamento."
+    }
+  ]
+}

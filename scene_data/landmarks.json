@@ -1,0 +1,86 @@
+{
+  "capture": "saida/imagens_reais/20261014_141328",
+  "pixel_space": "undistorted_roi",
+  "annotations_uncertainty_px": 5,
+  "fit_landmarks": [
+    {
+      "id": "L_NW",
+      "object_id": "Desk_L_001",
+      "local_position": [
+        -0.79,
+        0.71,
+        0.75
+      ],
+      "observations": {
+        "2": [
+          699,
+          109
+        ],
+        "3": [
+          794,
+          285
+        ],
+        "4": [
+          390,
+          286
+        ]
+      }
+    },
+    {
+      "id": "L_NE",
+      "object_id": "Desk_L_001",
+      "local_position": [
+        0.79,
+        0.71,
+        0.75
+      ],
+      "observations": {
+        "2": [
+          620,
+          95
+        ],
+        "3": [
+          875,
+          219
+        ],
+        "4": [
+          573,
+          404
+        ]
+      }
+    }
+  ],
+  "notes": "Cantos do mesmo tampo identificados em três vistas. Anotações manuais; verificar contornos nos overlays. Pontos usados no ajuste não constituem validação independente.",
+  "holdout_landmarks": [
+    {
+      "id": "L_NW_camera1",
+      "object_id": "Desk_L_001",
+      "local_position": [
+        -0.79,
+        0.71,
+        0.75
+      ],
+      "observations": {
+        "1": [
+          377,
+          89
+        ]
+      }
+    },
+    {
+      "id": "L_NE_camera1",
+      "object_id": "Desk_L_001",
+      "local_position": [
+        0.79,
+        0.71,
+        0.75
+      ],
+      "observations": {
+        "1": [
+          250,
+          108
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "source_image": "mesas_marcadas.png",
+  "sha256": "91ab81d0bcfe9f6b617a18abc0541810271a1d9bebf26023ffcda98cf42ca819",
+  "matching_original": "saida/imagens_reais/20261014_141328/originais/camera_3.png",
+  "matching_inliers": 109,
+  "image_registration_homography": [
+    [
+      0.6525133395856639,
+      -0.0016694046901388952,
+      16.157253863655477
+    ],
+    [
+      0.0007160715205727729,
+      0.6499398203754722,
+      6.870441662313762
+    ],
+    [
+      2.239808683010878e-06,
+      -4.613543081963924e-06,
+      1.0
+    ]
+  ],
+  "note": "Homografia apenas para registrar o recorte ampliado na MESMA imagem original; não é homografia do chão. Depois, undistortPoints e interseção do raio com Z=0,75 m. Traços vermelhos manuais têm incerteza.",
+  "observations": [
+    {
+      "marked_image_pixel": [
+        392,
+        253
+      ],
+      "corrected_roi_pixel": [
+        315.2585144042969,
+        106.00581359863281
+      ],
+      "estimated_world_on_z075": [
+        -1.1177030611997434,
+        4.102953535085194,
+        0.75
+      ]
+    },
+    {
+      "marked_image_pixel": [
+        413,
+        269
+      ],
+      "corrected_roi_pixel": [
+        327.7774963378906,
+        114.75660705566406
+      ],
+      "estimated_world_on_z075": [
+        -1.1071637171600541,
+        3.5548789399898926,
+        0.75
+      ]
+    },
+    {
+      "marked_image_pixel": [
+        511,
+        235
+      ],
+      "corrected_roi_pixel": [
+        377.490234375,
+        104.052978515625
+      ],
+      "estimated_world_on_z075": [
+        -0.3402372386504511,
+        3.6957964688408254,
+        0.75
+      ]
+    },
+    {
+      "marked_image_pixel": [
+        490,
+        222
+      ],
+      "corrected_roi_pixel": [
+        366.31787109375,
+        97.02409362792969
+      ],
+      "estimated_world_on_z075": [
+        -0.33032531208386073,
+        4.1832771054311335,
+        0.75
+      ]
+    },
+    {
+      "marked_image_pixel": [
+        159,
+        351
+      ],
+      "corrected_roi_pixel": [
+        166.03927612304688,
+        137.77102661132812
+      ],
+      "estimated_world_on_z075": [
+        -2.9361776754260456,
+        3.6809014179484016,
+        0.75
+      ]
+    },
+    {
+      "marked_image_pixel": [
+        186,
+        343
+      ],
+      "corrected_roi_pixel": [
+        186.5306396484375,
+        135.75650024414062
+      ],
+      "estimated_world_on_z075": [
+        -2.738471431509521,
+        3.628600860722102,
+        0.75
+      ]
+    },
+    {
+      "marked_image_pixel": [
+        176,
+        320
+      ],
+      "corrected_roi_pixel": [
+        177.24777221679688,
+        123.14930725097656
+      ],
+      "estimated_world_on_z075": [
+        -2.768750623253872,
+        4.265037597874147,
+        0.75
+      ]
+    }
+  ]
+}
