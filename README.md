@@ -1,16 +1,10 @@
 # LabSEA — reconstrução e simulação 3D
 
-Reconstrução do laboratório a partir de quatro câmeras calibradas, com Blender e Python. A referência atual é a captura de **14/10/2026**, com diferença de **68 ms** entre frames.
-
 ## Sobre o projeto
 
-O modelo foi construído a partir de informações disponíveis do LabSEA, incluindo dados de plantas baixas antigas e as posições e calibrações das quatro câmeras. As plantas serviram como referência inicial para a arquitetura; como são antigas, elas não representam necessariamente todas as mudanças feitas no laboratório. As posições das câmeras e as imagens capturadas foram usadas para orientar e conferir a reconstrução. Medidas e posições sem confirmação direta são tratadas como estimativas e estão descritas no relatório.
+O modelo foi desenvolvido com base nas informações disponíveis do LabSEA, incluindo dados de plantas baixas antigas, posições e calibrações das quatro câmeras e imagens do laboratório. As plantas serviram como referência inicial da arquitetura, mas podem não refletir todas as alterações feitas no espaço. Por isso, medidas e posições sem confirmação direta são estimativas e estão descritas no relatório.
 
-O desenvolvimento contou com apoio do **Codex** na organização e implementação de scripts, modelagem da cena e análise das referências. O Codex foi uma ferramenta de apoio: as informações físicas e as decisões sobre o laboratório vieram dos dados disponíveis e das revisões realizadas durante o projeto.
-
-**Abra `modelos/labsea_reconstruido.blend`.** A arquitetura original permanece em `modelos/labsea_com_aberturas.blend`; a cópia atual contém uma revisão provisória de 5 cm na posição do pilar das janelas, documentada no relatório. A reconstrução contém bancadas laterais, mesa em L, mesa de reunião, 13 cadeiras independentes, monitores, armários, quadros, equipamentos e quatro carcaças de câmera fixadas ao forro.
-
-A altura do forro é uma **hipótese de 2,97 m**. As paredes continuam com 3,70 m. A largura original do `.blend` é **6,95 m**, enquanto a descrição arquitetônica informa 6,67 m; essa divergência não foi corrigida sem medição. Veja [o relatório e as limitações](docs/relatorio_reconstrucao.md).
+O desenvolvimento contou com apoio do **Codex** na organização e implementação dos scripts, na modelagem da cena e na análise das referências. O Codex foi uma ferramenta de apoio; as informações físicas e as decisões sobre o laboratório partiram dos dados disponíveis e das revisões realizadas durante o projeto.
 
 ![Quatro vistas sintéticas calibradas do LabSEA](docs/images/labsea_grid.png)
 
@@ -132,8 +126,3 @@ Os scripts `criar_labsea.py`, `adicionar_aberturas.py` e `adicionar_janela_j16.p
 
 `visualizar_mapa.py`, `projetar_paredes.py`, `selecionar_pontos.py` e `comparar_cameras.py` continuam disponíveis para inspeção e uso ao vivo. Os resultados anteriores foram mantidos em `saida/historico/` ou nas pastas de diagnóstico, sem substituir as capturas reais.
 
-## GitHub
-
-O repositório local foi inicializado em `main`, sem publicação remota. `.gitignore` exclui `.venv`, capturas, saídas, caches e backups; `.gitattributes` trata Blender/NPZ como binários. Não foi atribuída uma licença ao projeto sem decisão do responsável. Os materiais desta reconstrução são procedurais; não usam pacotes de texturas de terceiros.
-
-As fotos reais, inclusive `mesas_marcadas.png`, ficam fora do versionamento. O modelo, scripts, parâmetros, inventário e relatório estão preparados para revisão e versionamento.
