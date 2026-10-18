@@ -126,8 +126,3 @@ Os scripts `criar_labsea.py`, `adicionar_aberturas.py` e `adicionar_janela_j16.p
 
 `visualizar_mapa.py`, `projetar_paredes.py`, `selecionar_pontos.py` e `comparar_cameras.py` continuam disponíveis para inspeção e uso ao vivo. Os resultados anteriores foram mantidos em `saida/historico/` ou nas pastas de diagnóstico, sem substituir as capturas reais.
 
-## GitHub
-
-O repositório local foi inicializado em `main`, sem publicação remota. `.gitignore` exclui `.venv`, capturas, saídas, caches e backups; `.gitattributes` trata Blender/NPZ como binários. Não foi atribuída uma licença ao projeto sem decisão do responsável. Os materiais desta reconstrução são procedurais; não usam pacotes de texturas de terceiros.
-
-As fotos reais, inclusive `mesas_marcadas.png`, ficam fora do versionamento. O modelo, scripts, parâmetros, inventário e relatório estão preparados para revisão e versionamento.
