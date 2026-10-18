@@ -1,7 +1,7 @@
 """Exporta a geometria visível do modelo para GLB.
 
 Exemplo:
-    blender -b modelos/labsea_reconstruido.blend --python scripts/blender/exportar_glb.py
+    blender -b modelos/labsea.blend --python scripts/blender/exportar_glb.py
 
 O GLB segue o padrão glTF (Y para cima). As poses calibradas originais em
 coordenadas mundo Z para cima permanecem nos arquivos .npz e no .blend.

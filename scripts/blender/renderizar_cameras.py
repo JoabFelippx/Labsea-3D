@@ -1,9 +1,9 @@
 """Renderiza imagens sintéticas das câmeras do LabSEA.
 
 Execução, na pasta do projeto:
-    blender -b modelos/labsea_com_aberturas.blend --python scripts/blender/renderizar_cameras.py
-    blender -b modelos/labsea_com_aberturas.blend --python scripts/blender/renderizar_cameras.py -- --cam 1 --objeto-teste
-    blender -b modelos/labsea_com_aberturas.blend --python scripts/blender/renderizar_cameras.py -- --cam 1 --luz 80 --exposicao -1.5
+    blender -b modelos/labsea.blend --python scripts/blender/renderizar_cameras.py
+    blender -b modelos/labsea.blend --python scripts/blender/renderizar_cameras.py -- --cam 1 --objeto-teste
+    blender -b modelos/labsea.blend --python scripts/blender/renderizar_cameras.py -- --cam 1 --luz 80 --exposicao -1.5
 
 Usa a pose das câmeras Camera_1 ... Camera_4 já presentes no .blend.
 Usa nK e width/height de calib_rt{i}.npz para configurar cada câmera.
@@ -192,7 +192,7 @@ def colocar_objeto_teste():
 def main():
     args = parse_args()
     if not bpy.data.filepath:
-        raise RuntimeError("Abra o arquivo .blend ao executar: blender -b modelos/labsea_com_aberturas.blend --python scripts/blender/renderizar_cameras.py")
+        raise RuntimeError("Abra o arquivo .blend final ao executar: blender -b modelos/labsea.blend --python scripts/blender/renderizar_cameras.py")
 
     pasta_calib = args.calib_dir.expanduser().resolve()
     pasta_saida = args.saida.expanduser().resolve()

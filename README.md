@@ -12,9 +12,7 @@ O desenvolvimento contou com apoio do **Codex** na organização e implementaç�
 
 | Caminho | Conteúdo |
 | --- | --- |
-| `modelos/labsea_reconstruido.blend` | Modelo atual, com materiais e textura empacotada |
-| `modelos/labsea_com_aberturas.blend` | Arquitetura de entrada preservada |
-| `modelos/labsea.blend` | Etapa inicial da construção arquitetônica |
+| `modelos/labsea.blend` | Modelo final, com materiais e textura empacotada |
 | `dados/calibracao/` | Quatro arquivos NPZ originais, sem alterações |
 | `scene_data/objects.json` | IDs, poses, dimensões, fontes e confiança dos objetos |
 | `scene_data/landmarks.json` | Correspondências manuais usadas na validação geométrica |
@@ -22,9 +20,10 @@ O desenvolvimento contou com apoio do **Codex** na organização e implementaç�
 | `scene_data/desk_observations.json` | Anotações da foto marcada, correção óptica e raios dos tampos |
 | `scripts/blender/` | Construção modular, materiais, câmeras, render e exportação |
 | `scripts/cameras/` | Captura IS-Wire, correção, triangulação e comparação |
-| `configs/aberturas/` | Configurações da arquitetura original |
 | `docs/` | Relatório, inventário e resultados resumidos da validação |
-| `saida/` | Capturas, renders, GLB, comparações e diagnósticos locais; fora do Git |
+| `saida/` | Captura de referência, renders finais, comparação final e GLB; fora do Git |
+
+O repositório contém somente a cena `.blend` final. Arquivos Blender intermediários, backups e diagnósticos de desenvolvimento foram removidos para evitar confusão entre versões.
 
 ## Ambiente
 
@@ -61,9 +60,9 @@ Uma nova captura **não reposiciona automaticamente os móveis**. Revise as obse
 Execute na raiz do projeto:
 
 ```bash
-blender -b modelos/labsea_com_aberturas.blend --python scripts/blender/scene_builder.py
-blender -b modelos/labsea_reconstruido.blend --python scripts/blender/renderizar_cameras.py
-blender -b modelos/labsea_reconstruido.blend --python scripts/blender/exportar_glb.py
+blender -b modelos/labsea.blend --python scripts/blender/scene_builder.py -- --saida saida/labsea_atualizado.blend
+blender -b saida/labsea_atualizado.blend --python scripts/blender/renderizar_cameras.py
+blender -b saida/labsea_atualizado.blend --python scripts/blender/exportar_glb.py
 python scripts/cameras/montar_grade.py
 python scripts/cameras/comparar_capturas.py --captura saida/imagens_reais/20261014_141328
 ```
@@ -72,13 +71,13 @@ Saídas principais:
 
 - `saida/imagens_sinteticas/camera_1.png` a `camera_4.png`: 1280 × 720, projeção `nK` sem distorção.
 - `saida/imagens_sinteticas/grid_cameras.png`: grid 2 × 2.
-- `saida/comparacoes/20261014_141328/`: pares real/sintético, diferenças e métricas no mesmo ROI.
-- `saida/validacao/`: auditorias de geometria, projeção e movimentação independente.
+- `saida/comparacoes/final_20261018/`: comparação atual dos renders com a captura real, diferenças e métricas no ROI.
+- `docs/validacao_resumo.json`: resumo das verificações geométricas e da exportação.
 
 Para uma prévia rápida:
 
 ```bash
-blender -b modelos/labsea_reconstruido.blend --python scripts/blender/renderizar_cameras.py -- --cam 3 --preview 50 --samples 12 --saida saida/preview
+blender -b modelos/labsea.blend --python scripts/blender/renderizar_cameras.py -- --cam 3 --preview 50 --samples 12 --saida saida/preview
 ```
 
 O renderizador preserva a iluminação salva na reconstrução e configura a resolução e o aspecto de pixel específicos de cada câmera. O `.blend` é salvo inicialmente na câmera 1. Para trocar de câmera com a projeção completa, use o script: o aspecto de pixel é uma propriedade da cena no Blender.
@@ -91,7 +90,7 @@ O builder recria os objetos marcados como gerados e atualiza materiais/organiza�
 
 ```bash
 python scripts/cameras/analisar_referencias.py --planos --mesas
-blender -b modelos/labsea_reconstruido.blend --python scripts/blender/validate_scene.py
+blender -b modelos/labsea.blend --python scripts/blender/validate_scene.py
 ```
 
 As anotações de cantos da mesa em L usam coordenadas da imagem **corrigida e recortada**. O código repõe o deslocamento do ROI antes de calcular raios. Os diagnósticos de planos usam Z = 0 para piso e Z = 0,75 m para tampos. Objetos fora desses planos aparecem deslocados nesses diagnósticos e não devem ser medidos como se pertencessem a eles.
@@ -113,7 +112,7 @@ chair.rotation_euler.z = radians(-90)
 Exporte a cena:
 
 ```bash
-blender -b modelos/labsea_reconstruido.blend --python scripts/blender/exportar_glb.py
+blender -b modelos/labsea.blend --python scripts/blender/exportar_glb.py
 ```
 
 O resultado é `saida/labsea.glb`, com hierarquias, nomes e propriedades em `extras`. A textura de granilite acompanha o arquivo; pequenos efeitos procedurais de relevo não são integralmente representados no glTF. As câmeras ópticas não são exportadas: a projeção calibrada permanece no `.blend`/NPZ.

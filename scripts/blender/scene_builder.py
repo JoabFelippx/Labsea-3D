@@ -1,6 +1,6 @@
 """Evolui a arquitetura existente usando scene_data/objects.json.
 
-blender -b modelos/labsea_com_aberturas.blend --python scripts/blender/scene_builder.py
+ blender -b modelos/labsea.blend --python scripts/blender/scene_builder.py -- --saida saida/labsea_atualizado.blend
 Somente objetos marcados generated_by são substituídos nas reexecuções.
 """
 import argparse
@@ -161,11 +161,11 @@ def architectural_details(data,colls,m):
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--objects',type=Path,default=ROOT/'scene_data/objects.json')
-    parser.add_argument('--saida',type=Path,default=ROOT/'modelos/labsea_reconstruido.blend')
+    parser.add_argument('--saida',type=Path,default=ROOT/'saida/labsea_atualizado.blend')
     parser.add_argument('--audit',type=Path,default=ROOT/'saida/validacao/build_audit.json')
     argv=sys.argv[sys.argv.index('--')+1:] if '--' in sys.argv else []
     args=parser.parse_args(argv)
-    if not bpy.data.filepath: raise RuntimeError('Abra o .blend arquitetônico existente.')
+    if not bpy.data.filepath: raise RuntimeError('Abra o .blend final existente como entrada.')
     if Path(bpy.data.filepath).resolve()==args.saida.resolve():
         raise ValueError('A saída deve ser uma cópia; use outro nome para preservar a entrada.')
     data=json.loads(args.objects.read_text())

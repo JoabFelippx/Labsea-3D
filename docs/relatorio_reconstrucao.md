@@ -2,7 +2,7 @@
 
 ## Referências e escopo
 
-A reconstrução utiliza `saida/imagens_reais/20261014_141328`, capturada pelo usuário via IS-Wire. Os timestamps de origem vão de **17:13:29.654510 a 17:13:29.722079 UTC**: intervalo de **67,57 ms**. Foram examinadas as quatro imagens originais e as quatro versões corrigidas com ROI.
+A reconstrução utiliza `saida/imagens_reais/20261014_141328`, capturada pelo usuário via IS-Wire. Os timestamps de origem vão de **17:13:29.654510 a 17:13:29.722079 UTC**: intervalo de **67,57 ms**. Foram examinadas as quatro imagens originais e as quatro versões corrigidas com ROI. A cena e seus renders foram atualizados em **18/10/2026**; as comparações atuais estão em `saida/comparacoes/final_20261018/`.
 
 As imagens reais substituem a limitação da etapa anterior, quando o broker não estava acessível neste ambiente. A captura existente foi preservada; não foi necessário capturar outro estado do laboratório.
 
@@ -10,7 +10,7 @@ Entradas inspecionadas: os modelos Blender existentes, scripts de criação/aber
 
 ## Arquitetura, câmeras e forro
 
-A entrada preservada é `modelos/labsea_com_aberturas.blend`. A saída é `modelos/labsea_reconstruido.blend`. Malhas, faces, modificadores de aberturas e matrizes dos objetos originais foram comparados antes/depois, com a revisão explícita do pilar descrita abaixo. Materiais, UV do piso e organização em coleções foram atualizados.
+Durante a reconstrução, a entrada arquitetônica foi `modelos/labsea_com_aberturas.blend` e a saída foi `modelos/labsea_reconstruido.blend`. Malhas, faces, modificadores de aberturas e matrizes dos objetos originais foram comparados antes/depois, com a revisão explícita do pilar descrita abaixo. Materiais, UV do piso e organização em coleções foram atualizados. Para simplificar a entrega, os `.blend` intermediários foram removidos; o arquivo distribuído é o modelo final.
 
 | Elemento | Estado |
 | --- | --- |
@@ -21,7 +21,7 @@ A entrada preservada é `modelos/labsea_com_aberturas.blend`. A saída é `model
 | Pilares | Dois pilares de 0,52 m; `Pilar_J21` recebeu revisão provisória de +0,05 m em X |
 | Forro | Superfície adicional a **2,97 m**, hipótese com confiança baixa |
 
-A largura textual de **6,67 m** diverge dos **6,95 m** do arquivo. A largura permanece sem alteração. O afastamento da J21 esquerda ao pilar era **0,03 m**; a descrição inicial citava 0,06 m. Em 15/10 o usuário esclareceu que a posição do pilar veio apenas da planta, estima **0,08 m** entre o fim da janela esquerda e o pilar e confirma que as mesas de 0,80 + 1,60 + 0,80 m cabem integralmente no vão. Foi aplicada uma **revisão provisória de +0,05 m em X somente no Pilar_J21**, resultando em 0,08 m de folga à janela esquerda e 3,215 m de vão para as mesas. Essa inferência tem **confiança baixa e requer medição**. A janela direita foi preservada; o encontro de sua moldura com o pilar passou a ter 0,02 m de sobreposição em projeção X e também requer conferência. A posição anterior continua no arquivo arquitetônico e nos backups. A exceção explícita consta de `architecture_adjustments` em `objects.json` e das auditorias; todas as demais transformações arquitetônicas permanecem iguais.
+A largura textual de **6,67 m** diverge dos **6,95 m** do arquivo. A largura permanece sem alteração. O afastamento da J21 esquerda ao pilar era **0,03 m**; a descrição inicial citava 0,06 m. Em 15/10 o usuário esclareceu que a posição do pilar veio apenas da planta, estima **0,08 m** entre o fim da janela esquerda e o pilar e confirma que as mesas de 0,80 + 1,60 + 0,80 m cabem integralmente no vão. Foi aplicada uma **revisão provisória de +0,05 m em X somente no Pilar_J21**, resultando em 0,08 m de folga à janela esquerda e 3,215 m de vão para as mesas. Essa inferência tem **confiança baixa e requer medição**. A janela direita foi preservada; o encontro de sua moldura com o pilar passou a ter 0,02 m de sobreposição em projeção X e também requer conferência. A posição anterior e a revisão estão documentadas neste relatório e em `architecture_adjustments` em `objects.json`; todas as demais transformações arquitetônicas permanecem iguais.
 
 Os centros ópticos calibrados têm Z entre **2,8425 e 2,8851 m**. O usuário confirmou fixação das câmeras no teto. Por isso foi acrescentado um forro separado e as bases visuais das câmeras passaram a ser horizontais. A altura de 2,97 m **não foi medida nem triangulada**. O espaçamento interno entre lente, carcaça e forro permanece aproximado. As paredes acima do forro continuam presentes.
 
@@ -98,13 +98,13 @@ As potências de luz e os materiais são ajustados por comparação, não medido
 
 ## Implementação e organização
 
-O código foi separado em `primitives.py`, `furniture.py`, `electronics.py`, `materials.py`, `camera_models.py`, `lighting.py` e `scene_builder.py`. O script antigo de carcaças foi reduzido a uma entrada que reutiliza a implementação comum. A criação de malhas evita operadores de seleção para reduzir o custo de reconstrução.
+O código foi separado em `primitives.py`, `furniture.py`, `electronics.py`, `materials.py`, `camera_models.py`, `lighting.py` e `scene_builder.py`. Os modelos físicos das câmeras são criados junto com a cena final. A criação de malhas evita operadores de seleção para reduzir o custo de reconstrução.
 
 A hierarquia `LabSEA` separa `Architecture`, `Furniture`, `DynamicObjects/Chairs`, `Electronics`, `WallObjects`, `Cameras/RenderCameras`, `Cameras/CameraModels` e `Lighting`. O builder remove somente objetos que ele próprio marcou como gerados. Reexecuções não duplicam as raízes.
 
-Na retomada de 15/10 foi detectada uma edição posterior do Blender: `Chair_008`, `Chair_012` e `Chair_013` tinham novas posições, e os antigos marcadores foram substituídos por 77 cruzes em grade. Essas alterações foram preservadas, com cópia integral em `saida/historico/labsea_reconstruido_recebido_20261015.blend`. As poses atuais foram sincronizadas em `objects.json`; a malha, posição e escala das cruzes foram registradas em `scene_data/floor_markers.json`. A grade branca provém do arquivo recebido, não de uma nova inferência das fotos.
+Na retomada de 15/10 foi detectada uma edição posterior do Blender: `Chair_008`, `Chair_012` e `Chair_013` tinham novas posições, e os antigos marcadores foram substituídos por 77 cruzes em grade. Essas alterações foram preservadas no modelo final. As poses atuais foram sincronizadas em `objects.json`; a malha, posição e escala das cruzes foram registradas em `scene_data/floor_markers.json`. A grade branca provém do arquivo recebido, não de uma nova inferência das fotos.
 
-O repositório local foi inicializado em `main`, com `.gitignore`, `.gitattributes`, `.editorconfig` e instruções reproduzíveis. Não houve publicação, commit, escolha de licença nem inclusão das fotos reais no Git. Os modelos de entrada foram preservados; versões geradas anteriores e backups ficam em `saida/historico/`.
+O repositório contém a cena final, scripts, dados e documentação. Os `.blend` intermediários, backups, prévias e diagnósticos temporários foram removidos. Capturas reais, renders, comparações e o GLB permanecem em `saida/`, ignorada pelo Git.
 
 ## Validações e artefatos
 
@@ -114,12 +114,12 @@ Os resultados quantitativos finais, a comparação com o modelo vazio e as limit
 
 Os quatro renders foram efetivamente gerados em **1280 × 720, Cycles, 32 amostras** e comparados com as referências corrigidas no ROI de cada câmera. A tabela compara o modelo arquitetônico sem mobiliário com esta revisão. F1 de bordas usa tolerância de 3 px; MAE é o erro médio de cor em escala 0–255. Essas métricas são auxiliares e **não representam percentual de fidelidade geométrica**.
 
-| Câmera | F1 inicial → final | MAE inicial → final | Mediana do piso real / sintético |
+| Câmera | F1 inicial → atual | MAE inicial → atual | Mediana do piso real / sintético |
 | --- | ---: | ---: | ---: |
-| 1 | 0.041 → 0.573 | 59.1 → 42.5 | 145 / 147 |
-| 2 | 0.072 → 0.595 | 61.9 → 35.7 | 149 / 150 |
-| 3 | 0.102 → 0.635 | 63.4 → 37.7 | 136 / 138 |
-| 4 | 0.086 → 0.599 | 52.9 → 48.3 | 136 / 138 |
+| 1 | 0.041 → 0.566 | 59.1 → 42.5 | 145 / 136 |
+| 2 | 0.072 → 0.589 | 61.9 → 36.8 | 149 / 140 |
+| 3 | 0.102 → 0.626 | 63.4 → 40.2 | 136 / 115 |
+| 4 | 0.086 → 0.584 | 52.9 → 49.4 | 136 / 116 |
 
 ### Verificações executadas
 
@@ -134,13 +134,13 @@ Os quatro renders foram efetivamente gerados em **1280 × 720, Cycles, 32 amostr
 
 ### Arquivos entregues
 
-- `modelos/labsea_reconstruido.blend`: modelo atualizado.
+- `modelos/labsea.blend`: modelo final atualizado.
 - `saida/imagens_sinteticas/camera_1.png` a `camera_4.png` e `grid_cameras.png`.
-- `saida/comparacoes/20261014_141328/camera_1_comparison.png` a `camera_4_comparison.png`, diferenças e métricas.
+- `saida/comparacoes/final_20261018/camera_1_comparison.png` a `camera_4_comparison.png`, diferenças e métricas atuais.
 - `saida/labsea.glb`: versão para visualizadores glTF/Three.js.
 - `scene_data/objects.json`, `desk_observations.json`, `floor_markers.json` e `landmarks.json`.
 - `docs/inventario.csv`, `docs/validacao_resumo.json` e este relatório.
 
 ### Limites da revisão
 
-As vistas 1 e 2 permitem conferir bancadas laterais, armários e mesa L; as vistas 3 e 4 mostram melhor as mesas sob as janelas e a GTMax. Restam diferenças de detalhes dos móveis, oclusões, reflexos e iluminação. A janela direita e o pilar precisam de levantamento para confirmar sua junção após a revisão provisória. As larguras das mesas foram confirmadas pelo usuário, mas profundidades, forro e várias posições ainda são estimativas. A reconstrução foi renderizada e comparada nas quatro perspectivas; **não constitui um levantamento métrico completo do laboratório**.
+As vistas 1 e 2 permitem conferir bancadas laterais, armários e mesa L; as vistas 3 e 4 mostram melhor as mesas sob as janelas e a GTMax. Restam diferenças de detalhes dos móveis, oclusões, reflexos e iluminação. A janela direita e o pilar precisam de levantamento para confirmar sua junção após a revisão provisória. As larguras das mesas foram confirmadas pelo usuário, mas profundidades, forro e várias posições ainda são estimativas. A reconstrução atual foi renderizada e comparada nas quatro perspectivas; **não constitui um levantamento métrico completo do laboratório**.
