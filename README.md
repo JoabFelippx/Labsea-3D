@@ -118,11 +118,3 @@ blender -b modelos/labsea_reconstruido.blend --python scripts/blender/exportar_g
 
 O resultado é `saida/labsea.glb`, com hierarquias, nomes e propriedades em `extras`. A textura de granilite acompanha o arquivo; pequenos efeitos procedurais de relevo não são integralmente representados no glTF. As câmeras ópticas não são exportadas: a projeção calibrada permanece no `.blend`/NPZ.
 
-O mundo original usa **Z para cima**. glTF/Three.js usa **Y para cima**. Converta posições por `(x, y, z) → (x, z, -y)`. A rotação em torno de Z do mundo original corresponde à rotação em torno de Y no GLB. Os identificadores de cadeiras representam esta captura; o rastreamento entre capturas ainda precisa associar as identidades.
-
-## Arquitetura e ferramentas anteriores
-
-Os scripts `criar_labsea.py`, `adicionar_aberturas.py` e `adicionar_janela_j16.py` documentam as etapas de geração da arquitetura. Não são necessários para atualizar o mobiliário. `adicionar_modelos_cameras.py` é uma entrada alternativa para adicionar somente carcaças, reutilizando `camera_models.py`.
-
-`visualizar_mapa.py`, `projetar_paredes.py`, `selecionar_pontos.py` e `comparar_cameras.py` continuam disponíveis para inspeção e uso ao vivo. Os resultados anteriores foram mantidos em `saida/historico/` ou nas pastas de diagnóstico, sem substituir as capturas reais.
-
