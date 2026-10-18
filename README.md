@@ -6,7 +6,7 @@ O modelo foi desenvolvido com base nas informações disponíveis do LabSEA, inc
 
 O desenvolvimento contou com apoio do **Codex** na organização e implementação dos scripts, na modelagem da cena e na análise das referências. O Codex foi uma ferramenta de apoio; as informações físicas e as decisões sobre o laboratório partiram dos dados disponíveis e das revisões realizadas durante o projeto.
 
-![Quatro vistas sintéticas calibradas do LabSEA](docs/images/labsea_grid.png)
+![Quatro vistas sintéticas calibradas do LabSEA](docs/images/labsea_grid_20261018.png)
 
 ## Organização
 
