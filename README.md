@@ -1,11 +1,5 @@
 # LabSEA — reconstrução e simulação 3D
 
-Reconstrução do laboratório a partir de quatro câmeras calibradas, com Blender e Python. A referência atual é a captura de **14/10/2026**, com diferença de **68 ms** entre frames.
-
-**Abra `modelos/labsea_reconstruido.blend`.** A arquitetura original permanece em `modelos/labsea_com_aberturas.blend`; a cópia atual contém uma revisão provisória de 5 cm na posição do pilar das janelas, documentada no relatório. A reconstrução contém bancadas laterais, mesa em L, mesa de reunião, 13 cadeiras independentes, monitores, armários, quadros, equipamentos e quatro carcaças de câmera fixadas ao forro.
-
-A altura do forro é uma **hipótese de 2,97 m**. As paredes continuam com 3,70 m. A largura original do `.blend` é **6,95 m**, enquanto a descrição arquitetônica informa 6,67 m; essa divergência não foi corrigida sem medição. Veja [o relatório e as limitações](docs/relatorio_reconstrucao.md).
-
 ![Quatro vistas sintéticas calibradas do LabSEA](docs/images/labsea_grid.png)
 
 ## Organização
